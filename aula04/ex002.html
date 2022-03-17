@@ -5,8 +5,68 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Teste</title>
+   <style>
+      * {
+         margin: 0px;
+         padding: 0px;
+      }
+      body {
+         background-color: brown;
+         color: white;
+         font: 20px Arial sans-serif bold;
+      }
+      .cent {
+         text-align: center;
+      }
+
+      h2.cent {
+         padding: 25px 0px;
+      }
+
+      div > ul {
+         list-style-position: inside;
+         width: fit-content;
+         margin: auto;
+      }
+      ul > ul {
+         padding-left: 20px;
+      }
+   </style>
 </head>
 <body>
-   
+   <header>
+      <section class="cent">
+         <h1>Javascript</h1>
+         <p>Um breve resumo</p>
+      </section>
+   </header>
+   <main>
+      <section>
+         <h2 class="cent">Data Types - Tipos primitivos</h2>
+         <div>
+            <ul>
+               <li>number</li>
+                  <ul>
+                     <li>Infinity</li>
+                     <li>NaN</li>
+                  </ul>
+               <li>string</li>
+               <li>boolean</li>
+               <li>null</li>
+               <li>undefined</li>
+               <li>object</li>
+                  <ul>
+                     <li>Array</li>
+                  </ul>
+               <li>function</li>
+            </ul>
+         </div>
+      </section>
+   </main>
+   <script>
+      // msg popup input name
+      var nome = window.prompt('Qual é o seu nome?')
+      window.alert('Seja Bem-Vindo, ' + nome)
+   </script> arquivo teste
 </body>
 </html>

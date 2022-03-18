@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Teste</title>
+   <style>
+      * {
+         margin: 0px;
+         padding: 0px;
+      }
+      body {
+         background-color: brown;
+         color: white;
+         font: 20px Arial sans-serif bold;
+      }
+      .cent {
+         text-align: center;
+      }
+
+      h2.cent {
+         padding: 25px 0px;
+      }
+
+      div > ul {
+         list-style-position: inside;
+         width: 90vw;
+         margin: auto;
+      }
+      
+      ul > ul {
+         padding-left: 20px;
+      }
+   </style>
+</head>
+<body>
+   <header>
+      <section class="cent">
+         <h1>Javascript</h1>
+         <p>Um breve resumo</p>
+      </section>
+   </header>
+   <main>
+      <section>
+         <h2 class="cent">Data Types - Tipos primitivos</h2>
+         <div>
+            <ul>
+               <li>number</li>
+                  <ul>
+                     <li>Infinity</li>
+                     <li>NaN</li>
+                  </ul>
+               <li>string</li>
+               <li>boolean</li>
+               <li>null</li>
+               <li>undefined</li>
+               <li>object</li>
+                  <ul>
+                     <li>Array</li>
+                  </ul>
+               <li>function</li>
+            </ul>
+         </div>
+      </section>
+   </main>
+   <script>
+      var n1 = Number(window.prompt('Digite um número: '))
+      var n2 = Number(window.prompt('Digite outro número: '))
+      var s = n1 + n2
+      window.alert(`A soma dos valores ${n1} e ${n2} é igual a ${s}.`)
+
+      // var n1 = parseInt(window.prompt('Digite um número: '))
+      // var n2 = parseInt(window.prompt('Digite outro número: '))
+
+      // var n1 = Number(window.prompt('Digite um número: '))
+      // var n2 = Number(window.prompt('Digite outro número: '))
+
+      // números podem ser convertidos usando 'Number.parse*', 'parse*' ou simplesmente 'Number'. 'Number' deixará a escolha do tipo para o programa decidir. 'Number.parse*' e 'parse*' forçará o programa a aceitar o tipo escolhido.
+
+      // String(n)
+      // n.toString
+      // Ambos os códigos acima convertem o tipo para 'String'.
+      nome = 'Murilo'
+      idade = 29
+      nota = 9
+      `O aluno ${nome}, de ${idade} anos, tirou a nota ${nota}.`
+   </script>
+</body>
+</html>

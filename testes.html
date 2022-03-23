@@ -4,84 +4,15 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Scripts</title>
-   <style>
-
-      body {
-         text-align: center;
-      }
-
-      h1 {
-         text-align: center;
-         margin-bottom: 50px;
-      }
-
-      div {
-         margin-top: 10px;
-         text-align: center;
-      }
-
-      input[type=number] {
-         text-align: center;
-         width: 50px;
-         line-height: 1.5em;
-      }
-
-      [type=button] {
-         background-color: #111;
-         color: white;
-         font-weight: bolder;
-         text-align: center;
-      }
-
-      h2 {
-         margin-top: 40px;
-      }
-
-      p, h2 {
-         text-align: center;
-      }
-
-   </style>
+   <link rel="stylesheet" href="style.css">
+   <title>Minha Página</title>
 </head>
 <body>
-   <h1>Testando Scripts</h1>
-
-   <h2>Soma simples</h2>
-   <div>
-      <input type="number" name="nu1" id="nu1"> +
-      <input type="number" name="nu2" id="nu2">
-   </div>
-   <div><input type="button" value="Somar" onclick="sum()" id="somar"></div>
-   <p id="result"></p>
-
-   <h2>Velocidade</h2>
-   <input type="number" name="vel" id="vel">Km/h
-   <p id="res"></p>
-   <input type="button" value="Radar" onclick="radar()">
-
-   <script>
-      function sum() {
-         var num1 = Number(window.document.getElementById('nu1').value)
-         var num2 = Number(window.document.getElementById('nu2').value)
-         var soma = window.document.querySelector('#somar')
-         var soma = num1 + num2
-         result.innerHTML = `A soma dos valores ${num1} e ${num2} é igual a <strong>${soma}</strong>`
-      }
-
-      function radar() {
-         var vel = Number(window.document.querySelector('#vel').value)
-         var res = window.document.querySelector('#res')
-         var maxVia = 70
-         if (vel>maxVia) {
-            res.innerHTML = `<p>Você foi <strong>MULTADO!</strong></p><p>Velocidade <strong>acima da máxima</strong> permitida.</p>`
-         } else if (vel<=maxVia && vel>=maxVia*0.5) {
-            res.innerHTML = `<p>Faça uma <strong>BOA VIAGEM!</strong></p>`
-         } else if (vel<maxVia*0.5) {
-            res.innerHTML = `<p>Você foi <strong>MULTADO!</strong></p><p>Velocidade <strong>abaixo da mínima</strong> permitida.</p>`
-         }
-      }
-
-   </script>
+   <header>
+      <img src="#" alt="logo">
+      <nav>
+         <a href=""></a><a href=""></a><a href=""></a>
+      </nav>
+   </header>
 </body>
 </html>

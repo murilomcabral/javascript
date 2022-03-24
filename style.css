@@ -4,13 +4,24 @@
    margin: 0px;
    padding: 0px;
    font-family: Arial, Helvetica, sans-serif;
+   /* border: 1px solid black; */
 }
 
 :root {
    --cor1: #ff4e14;
    --cor2: #a200ff;
-   --bgColor: #111;
-   --hdTxtColor: #eee;
+   --bgColor: #171919;
+   --gTxtColor: #efefef;
+   --hdTxtColor: #ccc;
+   --bgGradient: linear-gradient(to top, var(--cor1), var(--cor2));
+   --midMaxWidth: 700px;
+   --nShadow1: 0 0 10px #fff;
+   --nShadow2: 0 0 20px #fff;
+   --nShadow3: 0 0 50px #fff;
+}
+
+html {
+   background-color: #111;
 }
 
 ul {
@@ -19,22 +30,31 @@ ul {
 }
 
 body {
-   background-color: #111;
+   background-color: var(--bgColor);
+   margin: 0px auto;
+}
+
+.bd2 {
+   max-width: var(--midMaxWidth);
+   margin: auto;
 }
 
 header {
-   position: relative;
-   background-image: linear-gradient(to top, var(--cor1), var(--cor2));
+   background-image: url(night-sky.png);
+   background-repeat: no-repeat;
+   background-position: right;
+   background-size: cover;
    height: 150px;
-   color: var(--hdTxtColor);
    text-shadow: 3px 5px 10px #0008;
 }
 
 nav {
    display: flex;
    justify-content: space-between;
+   max-width: 700px;
    padding: 0px 15px;
-   padding-top: 120px;
+   padding-top: 110px;;
+   margin: 0px auto;
 }
 
 nav ul {
@@ -43,10 +63,35 @@ nav ul {
    align-items: flex-end;
 }
 
-section {
+article {
    margin: 15px;
    padding: 10px;
-   background-color: #333;
+}
+
+p {
+   color: var(--gTxtColor);
+   text-align: justify;
+}
+
+header h1 {
+   color: var(--gTxtColor);
+}
+
+main h2   {
+   color: var(--hdTxtColor);
+   margin: 1.5em 0 0.5em 0;
+}
+
+footer {
+   background-color: #ddd;
+}
+
+footer p {
+   color: black;
+   max-width: var(--midMaxWidth);
+   margin: auto;
+   padding: 3px 10px;
+   text-align: center;
 }
 
 img {
@@ -54,15 +99,16 @@ img {
 }
 
 a:link {
-   color: rgb(255, 255, 255);
+   color: white;
    text-decoration: none;
    font-weight: bold;
 }
 
 a:link:hover {
-   font-size: 1.2em;
-   text-shadow: 0px 0px 30px #fff;
-   transition: 173ms;
+   font-size: 1.05em;
+   text-shadow: var(--nShadow1),var(--nShadow2),var(--nShadow3);
+   transition: 150ms;
+   transition-property: all;
 }
 
 a:visited {

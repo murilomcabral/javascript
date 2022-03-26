@@ -84,11 +84,11 @@ main h2   {
 }
 
 footer {
-   background-color: #ddd;
+   background-color: var(--bgColor);
 }
 
 footer p {
-   color: black;
+   color: rgb(255, 255, 255);
    max-width: var(--midMaxWidth);
    margin: auto;
    padding: 3px 10px;
@@ -106,10 +106,10 @@ a:link {
 }
 
 a:link:hover {
-   font-size: 1.05em;
+   font-size: 1.25em;
    /* text-shadow: var(--nShadow1),var(--nShadow2),var(--nShadow3),var(--nShadow3); */
    transition: 100ms;
-   transition-timing-function: cubic-bezier(1, 0.5, 1, 0.3);
+   transition-timing-function: cubic-bezier(0.25, 0.75, 0.75, 0.25);
    animation-name: light;
    animation-duration: 600ms;
    animation-iteration-count: infinite;

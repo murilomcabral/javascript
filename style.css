@@ -24,11 +24,6 @@ html {
    background-color: #111;
 }
 
-ul {
-   list-style-type: none;
-   list-style-position: inside;
-}
-
 body {
    background-color: var(--bgColor);
    margin: 0px auto;
@@ -64,7 +59,13 @@ nav {
 nav ul {
    display: flex;
    gap: 15px;
+   text-align: center;
    align-items: flex-end;
+}
+
+ul {
+   list-style-type: none;
+   list-style-position: inside;
 }
 
 article {
@@ -110,13 +111,13 @@ a:link:hover {
    transition: 100ms;
    transition-timing-function: cubic-bezier(1, 0.5, 1, 0.3);
    animation-name: light;
-   animation-duration: 700ms;
+   animation-duration: 600ms;
    animation-iteration-count: infinite;
    animation-direction: alternate;
 }
 
 @keyframes light {
-   0% {text-shadow: var(--nShadow1);}
+   0% {text-shadow: var(--nShadow1),var(--nShadow2),var(--nShadow2),var(--nShadow3);}
    100% {text-shadow: var(--nShadow1),var(--nShadow2),var(--nShadow3),var(--nShadow3);}
 }
 

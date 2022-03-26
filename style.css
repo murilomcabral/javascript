@@ -48,6 +48,10 @@ header {
    text-shadow: 3px 5px 10px #0008;
 }
 
+header h1 {
+   color: var(--gTxtColor);
+}
+
 nav {
    display: flex;
    justify-content: space-between;
@@ -71,10 +75,6 @@ article {
 p {
    color: var(--gTxtColor);
    text-align: justify;
-}
-
-header h1 {
-   color: var(--gTxtColor);
 }
 
 main h2   {
@@ -106,9 +106,18 @@ a:link {
 
 a:link:hover {
    font-size: 1.05em;
-   text-shadow: var(--nShadow1),var(--nShadow2),var(--nShadow3);
-   transition: 150ms;
-   transition-property: all;
+   /* text-shadow: var(--nShadow1),var(--nShadow2),var(--nShadow3),var(--nShadow3); */
+   transition: 100ms;
+   transition-timing-function: cubic-bezier(1, 0.5, 1, 0.3);
+   animation-name: light;
+   animation-duration: 700ms;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+}
+
+@keyframes light {
+   0% {text-shadow: var(--nShadow1);}
+   100% {text-shadow: var(--nShadow1),var(--nShadow2),var(--nShadow3),var(--nShadow3);}
 }
 
 a:visited {

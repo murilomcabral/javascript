@@ -1,5 +1,5 @@
    function verificar() {
-      var data = new Date()
+      var data = new Date() // data do sistema como "Wed Mar 30 2022 13:24:44 GMT-0300 (Horário Padrão de Brasília)"
       var ano = data.getFullYear()
       var fAno = document.getElementById('txtano')
       var res = document.querySelector('div#res')

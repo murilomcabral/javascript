@@ -16,30 +16,38 @@
             if (idade >= 0 && idade < 10) {
                //criança
                img.setAttribute('src','imagens/menino.png')
+               document.querySelector('body').style.background = '#71C7EC';
             } else if (idade < 21) {
                //jovem
                img.setAttribute('src','imagens/garoto.png')
+               document.querySelector('body').style.background = '#1EBBD7';
             } else if (idade < 50) {
                //adulto
                img.setAttribute('src','imagens/homem.png')
+               document.querySelector('body').style.background = '#189AD3';
             } else {
                //idoso
                img.setAttribute('src','imagens/senhor.png')
+               document.querySelector('body').style.background = '#107DAC';
             }
          } else if (fsex[1].checked) {
             genero = 'Mulher'
             if (idade >= 0 && idade < 10) {
                //criança
                img.setAttribute('src','imagens/menina.png')
+               document.querySelector('body').style.background = '#E78AB3';
             } else if (idade < 21) {
                //jovem
                img.setAttribute('src','imagens/garota.png')
+               document.querySelector('body').style.background = '#E65D94';
             } else if (idade < 50) {
                //adulto
                img.setAttribute('src','imagens/mulher.png')
+               document.querySelector('body').style.background = '#DE3481';
             } else {
                //idoso
                img.setAttribute('src','imagens/senhora.png')
+               document.querySelector('body').style.background = '#8E2354';
             }
          } else {
             window.alert('[E0x001] Selecione o \'Sexo\'')

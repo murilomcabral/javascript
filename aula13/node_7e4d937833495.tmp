@@ -1,6 +1,0 @@
-let num = 10
-let text = 'bora lá'
-while (num != 0) {
-   console.log(text)
-   num =- 1
-}

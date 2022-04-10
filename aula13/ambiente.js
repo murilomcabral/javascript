@@ -9,4 +9,4 @@ while (num != 0) {
 do {
    console.log(`Bora lá ${text} ${num}`)
    num--
-} while (num != 0)
+} while (num != -5)

@@ -7,6 +7,6 @@ while (num != 0) {
 }
 
 do {
-   console.log(`Bora lá ${text} ${num}`)
+   console.log(`Teste ${text} ${num}`)
    num--
 } while (num != -5)

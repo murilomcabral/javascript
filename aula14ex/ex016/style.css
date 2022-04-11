@@ -20,6 +20,16 @@ section {
    box-shadow: 3px 5px 10px 2px #0002;
 }
 
+p {
+   text-align: left;
+}
+
+input {
+   display: inline-block;
+   text-align: right;
+   width: 30%;
+}
+
 footer {
    font-style: italic;
 }

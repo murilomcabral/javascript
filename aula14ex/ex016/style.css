@@ -30,6 +30,12 @@ input {
    width: 30%;
 }
 
+input[type="button"] {
+   text-align: center;
+   font-weight: bold;
+   width: 70px;
+}
+
 footer {
    font-style: italic;
 }

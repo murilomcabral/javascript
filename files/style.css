@@ -15,7 +15,7 @@
    --cor1: #ff4e14;
    --cor2: #a200ff;
    --cor3: #ffe137;
-   --scBar: #171919;
+   --scBar: #10101099;
    --scBarHover: #1f1f1f;
    --bgColor: #171919;
    --gTxtColor: #efefef;
@@ -53,9 +53,10 @@ body {
    margin: 0px auto;
 }
 
-.bd2 {
+.div2 {
    max-width: var(--midMaxWidth);
    margin: auto;
+   padding-top: 150px;
 }
 
 header {
@@ -64,7 +65,10 @@ header {
    background-position: right;
    background-size: cover;
    height: 150px;
+   position: fixed; /*menu fixed*/
+   width: 100vw;
    text-shadow: 3px 5px 10px #0008;
+   box-shadow: 0 0 30px 20px #0e0f0f80;
 }
 
 header h1 {
@@ -123,6 +127,10 @@ img {
    width: 100%;
 }
 
+a:visited {
+   color: var(--hdTxtColor);
+}
+
 a:link {
    color: #aac0df;
    text-decoration: none;
@@ -144,10 +152,6 @@ a:link:hover {
 @keyframes light {
    0% {text-shadow: var(--nShadow1),var(--nShadow2),var(--nShadow2),var(--nShadow3);}
    100% {text-shadow: var(--nShadow1),var(--nShadow2),var(--nShadow3),var(--nShadow3);}
-}
-
-a:visited {
-   color: var(--hdTxtColor);
 }
 
 #scrollbarbutton {

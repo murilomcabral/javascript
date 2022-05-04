@@ -1,9 +1,0 @@
-function fatorial(n) {
-   do {
-      console.log(n)
-      n =- 1
-   } while (n != 0)
-}
-
-let num = 5
-let fact = fatorial(num)

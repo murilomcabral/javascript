@@ -1,8 +1,0 @@
-function fatorial(n) {
-   do {
-      n = n*(n-1)
-   } while (n > 0)
-}
-
-let num = 10
-let fact = fatorial(num)

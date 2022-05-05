@@ -7,11 +7,17 @@ function addValor(){
    if (num < 1 || num > 100) {
       window.alert('Por favor, digite um número válido!')
    } else {
+      
       let item = document.createElement('option')
       item.text = (`O valor ${num} foi adicionado.`)
       box.appendChild(item)
+
       c++ //adiciona 1 ao valor
+
+      if (box.hasAttribute('size') < c) {
+         box.setAttribute('size', c)
+      }
    }
    
 }
-//verificar código
+//array e append em section

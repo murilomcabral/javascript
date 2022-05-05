@@ -1,11 +1,17 @@
-function adicionarValor() {
-   let num = document.querySelector('#numInput')
-   if (num = "") {
-      window.alert('Informe 1 número!')
-   } else {
-      let box = document.querySelector('#inputBox')
-      box.append = (`O número ${num} foi adicionado.`)
-   }
-}
+let c = 0 //determina o objeto no array
 
+function addValor(){
+   let num = Number(document.getElementById('numInput').value)
+   let box = document.getElementById('inputBox')
+   box.innerHTML = ""
+   if (num < 1 || num > 100) {
+      window.alert('Por favor, digite um número válido!')
+   } else {
+      let item = document.createElement('option')
+      item.text = (`O valor ${num} foi adicionado.`)
+      box.appendChild(item)
+      c++ //adiciona 1 ao valor
+   }
+   
+}
 //verificar código

@@ -8,7 +8,7 @@ function addValor() {
    if (num < 1 || num > 100) {
       window.alert('Por favor, digite um número válido!')
    } else {
-      lista = num[c]
+      lista.push(num)
       let item = document.createElement('option')
       item.text = (`O valor ${num} foi adicionado.`)
       box.appendChild(item)
@@ -25,7 +25,7 @@ function analise() {
    if (box = "") {
       window.alert('Não há dados para serem analisados.')
    } else {
-      window.alert('Lista')
+      window.alert(lista)
    }
 }
 //array e append em section

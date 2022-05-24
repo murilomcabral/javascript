@@ -14,10 +14,13 @@ header {
 }
 
 body {
+   position: absolute;
    background-color: white;
    max-width: 600px;
-   height: auto;
    padding: 20px;
+   top: 100px;
+   left: 50%;
+   transform: translate(-50%, -50%);
 }
 
 input#nota {

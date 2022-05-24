@@ -1,6 +1,9 @@
-let contaNota = document.getElementById('contaNota')
+let cNota = document.getElementById('contaNota')
 let nota = document.querySelector('input#nota')
-let bancoNotas = []
+let bNotas = []
 
-let n = 2
-contaNota.innerHTML(n);
+function cadastrar() {
+   for(let n = 1; n <= 4; n++) {
+      cNota.textContent = `${n}`
+   }
+}

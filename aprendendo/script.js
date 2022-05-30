@@ -1,18 +1,36 @@
-let cNota = document.getElementById('contaNota')
+let contaNota = document.getElementById('contaNota')
 let nota = document.querySelector('input#nota')
+let lista = document.querySelector('select#lista')
 let bNotas = []
-let n = 1
+let nNota = 1
+
+function teste1(n) {
+   if (n >= 1 && n <= 10) {
+      return true
+   } else {
+   return false
+   }
+}
+
+function teste2(l) {
+   if (l <= 4) {
+      return true
+   } else {
+      return false
+   }
+}
 
 function cadastrar() {
-   do {
-         if (nota.value >= 0 && nota.value <= 10) {
-         n++
-         cNota.textContent = `${n}`
+   if (teste1(nota.value) && teste2(bNotas.length)) {
+         nNota++
+         bNotas.push(nota.value)
+         contaNota.textContent = `${nNota}`
          bNotas.push(nota.value)      
       } else {
          window.alert(`Digite um valor válido.[${nota.value} inválido]`)
       }
       nota.value = ''
       nota.focus()
-   } while (bNotas.length < 4) //corrigir código - o objetivo seria limitar a quantidade de notas cadastradas a 4 notas e mostrar o resultado após a validação da quarta nota.
-}
+   }
+   
+   //corrigir código - o objetivo seria limitar a quantidade de notas cadastradas a 4 notas e mostrar o resultado após a validação da quarta nota.

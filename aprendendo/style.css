@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
 * {
-   margin: auto;
+   margin: 0px;
+   padding: 0px;
 }
 
 html {
@@ -10,24 +11,30 @@ html {
 
 header {
    text-align: center;
-   margin-bottom: 20px;
 }
 
 body {
-   position: absolute;
    background-color: white;
-   max-width: 600px;
+   max-width: 500px;
+   margin: auto;
    padding: 20px;
-   top: 100px;
-   left: 50%;
-   transform: translate(-50%, -50%);
+}
+p, input, select {
+   margin-top: 10px;
 }
 
 input#nota {
-   width: 100px;
+   width: calc(100% - 71px);
+}
+
+input#cadastrarBtt {
 }
 
 div {
    font-family: Arial, Helvetica, sans-serif;
    font-weight: bold;
+}
+
+select#lista {
+   width: 100%;
 }

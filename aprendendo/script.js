@@ -5,7 +5,7 @@ let bNotas = []
 let nNota = 1
 
 function btw(n) {
-   if (n >= 1 && n <= 10) {
+   if (n >= 0 && n <= 10) {
       return true
    } else {
    return false
@@ -13,7 +13,7 @@ function btw(n) {
 }
 
 function lessThan(l) {
-   if (l <= 4) {
+   if (l <= 6) {
       return true
    } else {
       return false
@@ -26,11 +26,12 @@ function cadastrar() {
          bNotas.push(nota.value)
          contaNota.textContent = `${nNota}`
          bNotas.push(nota.value)      
+      } else if (!btw(nota.value)) {
+         window.alert(`Valor inválido`)
       } else {
-         window.alert(`Digite um valor válido.[${nota.value} inválido]`)
+         window.alert('Todas as notas já foram cadastradas')
       }
       nota.value = ''
       nota.focus()
    }
-   
    //corrigir código - o objetivo seria limitar a quantidade de notas cadastradas a 4 notas e mostrar o resultado após a validação da quarta nota.

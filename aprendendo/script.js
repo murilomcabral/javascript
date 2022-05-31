@@ -4,7 +4,7 @@ let lista = document.querySelector('select#lista')
 let bNotas = []
 let nNota = 1
 
-function teste1(n) {
+function btw(n) {
    if (n >= 1 && n <= 10) {
       return true
    } else {
@@ -12,7 +12,7 @@ function teste1(n) {
    }
 }
 
-function teste2(l) {
+function lessThan(l) {
    if (l <= 4) {
       return true
    } else {
@@ -21,7 +21,7 @@ function teste2(l) {
 }
 
 function cadastrar() {
-   if (teste1(nota.value) && teste2(bNotas.length)) {
+   if (btw(nota.value) && lessThan(bNotas.length)) {
          nNota++
          bNotas.push(nota.value)
          contaNota.textContent = `${nNota}`

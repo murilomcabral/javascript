@@ -3,7 +3,7 @@ let lista = document.querySelector('select#flista')
 let res = document.querySelector('div#res')
 let valores = []
 
-function isNumero(n) {
+function isNum(n) {
    if(Number(n) >=1 && Number(n) <= 100) {
       return true
    } else {
@@ -12,7 +12,7 @@ function isNumero(n) {
 }
 
 function inLista(n, l) {
-   if(l.indexOf(Number(n)) != -1) {
+   if(l.indexOf(Number(n)) == -1) {
       return true
    } else {
       return false
@@ -20,12 +20,14 @@ function inLista(n, l) {
 }
 
 function adicionar() {
-   if (isNumero(num.value) && !inLista(num.value, valores)) {
+   if (isNum(num.value) && inLista(num.value, valores)) {
       valores.push(Number(num.value))
       let item = document.createElement('option')
       item.text = `Valor ${num.value} adicionado.`
       lista.appendChild(item)
       res.innerHTML = ''
+      num.value = ''
+      num.focus()
    } else {
       window.alert(`Valor \"${num.value}\" inválido ou já encontrado na lista.`)
       num.value = ''

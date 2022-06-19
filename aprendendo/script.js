@@ -35,9 +35,10 @@ function cadastrar() {
          contaNota.textContent = `${nNota}`
          bNotas.push(nota.value)      
       } else if (!btw(nota.value)) {
-         window.alert(`Valor inválido`)
+         window.alert(`Valor inválido.`)
       } else {
-         notaT.innerHTML('<p>hehe</p>')
+         contaNota.textContent = `4`
+         window.alert(`Todas as notas já foram cadastradas.`)
       }
    nota.value = ''
    nota.focus()

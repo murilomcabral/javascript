@@ -24,10 +24,12 @@ p, input, select {
 }
 
 input#nota {
-   width: calc(100% - 71px);
+   width: calc(100% - 233px);
 }
 
-input#cadastrarBtt {
+span#flexcontainer {
+   display: flex;
+   justify-content: flex-end;
 }
 
 div {

@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+:root {
+   --cor01: #fc0022;
+}
+
+body {
+   background-color:lightgray;
+   margin: 0px;
+}
+
+header {
+   background-color: white;
+   padding: 10px 10px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-size: 20px;
+   font-weight: bold;
+   color: var(--cor01);
+}
+
+header p {
+   margin: 0px;
+   padding: 0px;
+}
+
+p#headerContainer {
+   display: flex;
+   justify-content: space-between;
+}

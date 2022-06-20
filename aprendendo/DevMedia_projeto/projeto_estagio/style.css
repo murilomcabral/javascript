@@ -1,12 +1,15 @@
 @charset "UTF-8";
 
 :root {
+   --cor00: #333;
    --cor01: #fc0022;
+   --fonte01: normal 20px Cambria, serif;
 }
 
 body {
    background-color:lightgray;
-   margin: 0px;
+   margin: 0px auto;
+   max-width: 1080px;
 }
 
 header {
@@ -26,4 +29,8 @@ header p {
 p#headerContainer {
    display: flex;
    justify-content: space-between;
+}
+
+main {
+   background-color: var(--cor00);
 }

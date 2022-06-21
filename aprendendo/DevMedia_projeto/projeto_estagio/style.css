@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+* {
+   margin: 0px;
+}
+
+section ul :link {
+   color: white;
+}
+
 :root {
    --cor00: #333;
    --cor01: #fc0022;
@@ -21,6 +29,18 @@ header {
    color: var(--cor01);
 }
 
+section#travelS {
+   height: 400px;
+   background-image: url(imagens/london.jpg);
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
 header p {
    margin: 0px;
    padding: 0px;
@@ -33,4 +53,31 @@ p#headerContainer {
 
 main {
    background-color: var(--cor00);
+}
+
+ul {
+   display: flex;
+   margin: 0px;
+   padding: 0px;
+   width: 500px;
+   list-style: none;
+   background-color: var(--cor00);
+   color: white;
+   justify-content: space-around;
+}
+
+li {
+   padding: 10px;
+   width: 100%;
+   text-align: center;
+}
+
+#flightLink {
+   background-color: var(--cor01);
+}
+
+#fromTo {
+   background-color: white;
+   width: 500px;
+   height: 150px;
 }

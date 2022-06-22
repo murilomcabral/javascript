@@ -1,17 +1,50 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;1,300;1,700&display=swap');
+
 * {
    margin: 0px;
 }
 
+header :link {
+   color: hsl(0, 0%, 20%);
+   text-decoration: none;
+}
+
+header :visited {
+   color: hsl(0, 0%, 20%);
+   text-decoration: none;
+}
+
 section ul :link {
-   color: white;
+   color: hsl(0, 0%, 100%);
+   text-decoration: none;
+}
+
+section ul :visited {
+   color: hsl(0, 0%, 100%);
+   text-decoration: none;
+}
+
+section ul :link:hover {
+   text-decoration: solid underline;
 }
 
 :root {
    --cor00: #333;
    --cor01: #fc0022;
-   --fonte01: normal 20px Cambria, serif;
+   --fonte01: italic 20px 'Ubuntu', sans-serif;
+   --fonte02: normal 20px 'Ubuntu', sans-serif;
+   --fonte03: normal 15px 'Ubuntu', sans-serif;
+   --fonteWeight01: 700;
+   --fonteWeight02: 500;
+   --menuSize: 600px;
+}
+
+h3 {
+   font: var(--fonte02);
+   font-weight: var(--fonteWeight02);
+   margin-bottom: 10px;
 }
 
 body {
@@ -23,18 +56,14 @@ body {
 header {
    background-color: white;
    padding: 10px 10px;
-   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-   font-size: 20px;
-   font-weight: bold;
+   font: var(--fonte01);
+   font-weight: var(--fonteWeight01);
    color: var(--cor01);
 }
 
 section#travelS {
    height: 400px;
-   background-image: url(imagens/london.jpg);
-   background-repeat: no-repeat;
-   background-attachment: fixed;
-   background-position: center;
+   background: var(--cor00) url(imagens/london.jpg) no-repeat center;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -55,21 +84,49 @@ main {
    background-color: var(--cor00);
 }
 
+p > input {
+   width: 30px;
+   line-height: 30px;
+}
+
 ul {
    display: flex;
    margin: 0px;
    padding: 0px;
-   width: 500px;
+   width: var(--menuSize);
+   font: var(--fonte03);
+   font-weight: var(--fonteWeight02);
    list-style: none;
    background-color: var(--cor00);
    color: white;
-   justify-content: space-around;
 }
 
 li {
-   padding: 10px;
+   padding: 5px;
    width: 100%;
    text-align: center;
+}
+
+div#flightMenuContainer p {
+   margin: 0px;
+   padding: 0px;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   margin-right: auto;
+}
+
+#flightMenuContainer {
+   display: flex;
+}
+
+p > input {
+   width: 230px;
+}
+
+#fromTo > div {
+   margin: 0px;
+   padding: 20px;
 }
 
 #flightLink {
@@ -78,6 +135,6 @@ li {
 
 #fromTo {
    background-color: white;
-   width: 500px;
+   width: var(--menuSize);
    height: 150px;
 }

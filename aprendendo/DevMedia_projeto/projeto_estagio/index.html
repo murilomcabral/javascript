@@ -9,19 +9,25 @@
 </head>
 <body>
    <header>
-      <p id="headerContainer"><span>&#X1F680; Logo</span><span><input type="search" name="headerSearchBox" id="headerSearchBox"> &#x1f50d;</span></p>
+      <p id="headerContainer"><a href="index.html"><span>&#X1F680; Primali</span></a><span><input type="search" name="headerSearchBox" id="headerSearchBox"> &#x1f50d;</span></p>
    </header>
    <main>
       <section id="travelS">
          <div>
-            <ul id="flightMenuContainer">
-               <li id="flightLink"><a href="1">Flight</a></li>
-               <li><a href="2">Hotel</a></li>
-               <li><a href="3">Rental</a></li>
+            <ul>
+               <li id="flightLink"><a href="#">Flight</a></li>
+               <li><a href="#">Hotel</a></li>
+               <li><a href="#">Rental</a></li>
             </ul>
          </div>
          <div id="fromTo">
-            <p>From: <input type="text"> To: <input type="text"></p>
+            <div>
+               <h3>Travel the world with us</h3>
+               <div id="flightMenuContainer">
+                  <p>From: <input type="text" maxlength="30" placeholder="Departing from"></p>
+                  <p>To: <input type="text" maxlength="30" placeholder="Arriving at"></p>
+               </div>
+            </div>
          </div>
       </section>
       <section>

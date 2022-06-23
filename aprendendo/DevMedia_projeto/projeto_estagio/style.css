@@ -51,15 +51,17 @@ h3 {
 body {
    display: flex;
    flex-direction: column;
+   align-items: center;
    background-color:#333;
-   margin: 0px auto;
    width: 100vw;
+}
+
+body > div {
+   width: max(100%, 350px);
 }
 
 header {
    background-color: white;
-   width: 800px;
-   margin: auto;
    font: var(--fonte01);
    font-weight: var(--fonteWeight01);
    color: var(--cor01);
@@ -71,10 +73,10 @@ header > div {
    padding: 10px;
 }
 
-main {
+/* main {
    margin: 0px auto;
    width: 800px;
-}
+} */
 
 section#travelMenu {
    height: 400px;
@@ -85,7 +87,7 @@ section#travelMenu {
 }
 
 section#travelMenu :first-child {
-   max-width: 100%;
+   max-width: 500px;
 }
 
 div#travelSearchBox {
@@ -99,14 +101,6 @@ div#fromTo {
    display: flex;
    justify-content: space-between;
 }
-
-/* div#fMenuCont p {
-   display: flex;
-   justify-content: flex-start;
-   flex-wrap: wrap;
-   align-items: center;
-   margin-right: auto;
-} */
 
 p#headerContainer {
    display: flex;

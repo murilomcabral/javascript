@@ -9,24 +9,31 @@
 </head>
 <body>
    <header>
-      <p id="headerContainer"><a href="index.html"><span>&#X1F680; Primali</span></a><span><input type="search" name="headerSearchBox" id="headerSearchBox"> &#x1f50d;</span></p>
+      <div>
+         <div id="logo">
+            <p id="headerContainer"><a href="index.html"><span>&#X1F680; Primali</span></a>
+         </div>
+         <div id="searchBox">
+            <span><input type="search" name="headerSearchBox" id="headerSearchBox"> &#x1f50e;</span></p>
+         </div>
+      </div>
    </header>
    <main>
-      <section id="travelS">
+      <section id="travelMenu">
          <div>
-            <ul>
-               <li id="flightLink"><a href="#">Flight</a></li>
-               <li><a href="#">Hotel</a></li>
-               <li><a href="#">Rental</a></li>
-            </ul>
-         </div>
-         <div id="fromTo">
             <div>
-               <h3>Travel the world with us</h3>
-               <div id="flightMenuContainer">
-                  <p>From: <input type="text" maxlength="30" placeholder="Departing from"></p>
-                  <p>To: <input type="text" maxlength="30" placeholder="Arriving at"></p>
-               </div>
+               <ul>
+                  <li id="flightLink"><a href="#">Flight</a></li>
+                  <li><a href="#">Hotel</a></li>
+                  <li><a href="#">Rental</a></li>
+               </ul>
+            </div>
+            <div id="travelSearchBox">
+                  <h3>Travel the world with us</h3>
+                  <div id="fromTo">
+                     <p>From: <input type="text" maxlength="30" placeholder="Departing from"></p>
+                     <p>To: <input type="text" maxlength="30" placeholder="Arriving at"></p>
+                  </div>
             </div>
          </div>
       </section>

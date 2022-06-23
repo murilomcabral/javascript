@@ -4,6 +4,7 @@
 
 * {
    margin: 0px;
+   padding: 0px;
 }
 
 header :link {
@@ -48,36 +49,68 @@ h3 {
 }
 
 body {
-   background-color:lightgray;
+   display: flex;
+   flex-direction: column;
+   background-color:#333;
    margin: 0px auto;
-   max-width: 1080px;
+   width: 100vw;
 }
 
 header {
    background-color: white;
-   padding: 10px 10px;
+   width: 800px;
+   margin: auto;
    font: var(--fonte01);
    font-weight: var(--fonteWeight01);
    color: var(--cor01);
 }
 
-section#travelS {
+header > div {
+   display: flex;
+   justify-content: space-between;
+   padding: 10px;
+}
+
+main {
+   margin: 0px auto;
+   width: 800px;
+}
+
+section#travelMenu {
    height: 400px;
    background: var(--cor00) url(imagens/london.jpg) no-repeat center;
    display: flex;
-   flex-direction: column;
    justify-content: center;
    align-items: center;
 }
 
-header p {
-   margin: 0px;
-   padding: 0px;
+section#travelMenu :first-child {
+   max-width: 100%;
 }
+
+div#travelSearchBox {
+   max-width: 100%;
+   height: 100%;
+   padding: 20px;
+   background-color: white;
+}
+
+div#fromTo {
+   display: flex;
+   justify-content: space-between;
+}
+
+/* div#fMenuCont p {
+   display: flex;
+   justify-content: flex-start;
+   flex-wrap: wrap;
+   align-items: center;
+   margin-right: auto;
+} */
 
 p#headerContainer {
    display: flex;
-   justify-content: space-between;
+   justify-content: space-evenly;
 }
 
 main {
@@ -85,14 +118,11 @@ main {
 }
 
 p > input {
-   width: 30px;
    line-height: 30px;
 }
 
 ul {
    display: flex;
-   margin: 0px;
-   padding: 0px;
    width: var(--menuSize);
    font: var(--fonte03);
    font-weight: var(--fonteWeight02);
@@ -107,34 +137,11 @@ li {
    text-align: center;
 }
 
-div#flightMenuContainer p {
-   margin: 0px;
-   padding: 0px;
-   display: flex;
-   justify-content: flex-start;
-   align-items: center;
-   margin-right: auto;
-}
-
-#flightMenuContainer {
-   display: flex;
-}
-
 p > input {
-   width: 230px;
+   width: 100%;
 }
 
-#fromTo > div {
-   margin: 0px;
-   padding: 20px;
-}
 
 #flightLink {
    background-color: var(--cor01);
-}
-
-#fromTo {
-   background-color: white;
-   width: var(--menuSize);
-   height: 150px;
 }

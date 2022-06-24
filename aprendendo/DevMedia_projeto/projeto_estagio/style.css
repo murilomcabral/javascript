@@ -117,7 +117,7 @@ p > input {
 
 ul {
    display: flex;
-   width: var(--menuSize);
+   justify-content: space-around;
    font: var(--fonte03);
    font-weight: var(--fonteWeight02);
    list-style: none;
@@ -126,9 +126,9 @@ ul {
 }
 
 li {
+   text-align: center;
    padding: 5px;
    width: 100%;
-   text-align: center;
 }
 
 p > input {

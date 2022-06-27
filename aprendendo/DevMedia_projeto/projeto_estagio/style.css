@@ -97,6 +97,10 @@ section#travelMenu {
    align-items: center;
 }
 
+section#travelMenu div {
+   width: 600px;
+}
+
 /* section#travelMenu :first-child {
    max-width: 500px;
 } */
@@ -114,6 +118,7 @@ p#headerContainer {
 
 ul {
    display: flex;
+   width: calc(100% + 20px);
    justify-content: space-around;
    font: var(--fonte03);
    font-weight: var(--fonteWeight02);

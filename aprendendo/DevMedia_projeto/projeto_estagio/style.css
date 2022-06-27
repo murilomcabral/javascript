@@ -2,6 +2,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;1,300;1,700&display=swap');
 
+@media screen and (max-width: 400px) {
+   header div {
+      flex-flow: column;
+      text-align: center;
+   }
+
+   p#headerContainer > a {
+      display: flex;
+      flex-direction: column;
+   }
+}
+
 * {
    margin: 0px;
    padding: 0px;
@@ -50,14 +62,11 @@ h3 {
 
 body {
    background-color:#333;
-   max-width: 100vw;
 }
 
 body > div {
-   width: max(100%, 400px);
    display: flex;
    flex-direction: column;
-   margin: 0px auto;
 }
 
 header {

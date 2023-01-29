@@ -1,51 +1,10 @@
-// // https://www.freecodecamp.org/learn/coding-interview-prep/project-euler/problem-1-multiples-of-3-and-5
+// need to learn
 
-// function multiplesOf3and5(number) {
-//   let sum = 0
-//   for (let i = 0; i < number; i++) {
-//     if (i%3 === 0 || i%5 === 0) {
-//       sum += i
-//     }
-//   }
-//   return sum;
-// }
+const diff = (arr1, arr2) => [
+  ...arr1.filter(e => !arr2.includes(e)),
+  ...arr2.filter(e => !arr1.includes(e))
+];
 
-// multiplesOf3and5(1000);
+const sym = (...args) => [...new Set(args.reduce(diff))];
 
-// //https://www.freecodecamp.org/learn/coding-interview-prep/project-euler/problem-2-even-fibonacci-numbers
-
-// function fiboEvenSum(n) {
-//   const arr = []
-//   let pri = 0
-//   let sec = 1
-//   let mid
-//   for (let i = 0; sec < n; i++) {
-//     mid = pri + sec
-//     pri = sec
-//     sec = mid
-//     arr.push(sec)
-//   }
-//   let sum = 0
-//   for (let n of arr) {
-//     if (n%2 === 0) {
-//       sum += n;
-//     }
-//   }
-//   return sum
-// }
-
-//https://www.freecodecamp.org/learn/coding-interview-prep/project-euler/problem-3-largest-prime-factor
-
-function largestPrimeFactor(number) {
-  let prime = 2,
-  max = 2;
-  while (prime <= number) {
-    if (number % prime == 0) {
-      max = prime;
-      number = number / prime;
-    } else prime++; //Only increment the prime number if the number isn't divisible by it
-  }
-  return max;
-}
-
-console.log(largestPrimeFactor(8))
+console.log(sym([1, 2, 3], [5, 2, 1, 4]));

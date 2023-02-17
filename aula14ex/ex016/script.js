@@ -18,7 +18,7 @@ function contarNum() {
       }
       if (i < f) {
          //contagem crescente
-         for(let c = i; c <= f; c += p) {
+         for(let c = i; c < f; c += p) {
             res.innerHTML += `${c} \u{1F449} `
          }
       } else {

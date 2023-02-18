@@ -11,11 +11,25 @@
 //  ];
  
 //  const sym = (...args) => [...new Set(args.reduce(diff))];
-const array1 = [5, 2, 1, 4]
-const array2 = [8, 3, 9, 2]
-const array3 = [4, 8, 7, 6]
+function cry(name) {
 
-console.log(...array1,...array2,...array3)
+   const list = []
+   for (let i = 0; i < name.length; i++)
+   list.push(name.charCodeAt(i))
+
+   const code = list
+
+   let str = ''
+   list.forEach(e => {
+      str += String.fromCharCode(e)
+   });
+
+   return {code,str}
+}
+
+const nome = 'Murilo'
+
+console.log(cry(nome))
 
 // const col = document.querySelector('button[type=submit]')
 // col.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.remove()

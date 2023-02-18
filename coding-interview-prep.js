@@ -19,12 +19,9 @@ function multiplesOf3and5(number) {
        arrNum.push(i)
      }
    }
-      let initial = 0
-      let res = arrNum.reduce((accumulator, current) => accumulator + current, initial);
-      return res
+   let res = arrNum.reduce((accumulator, current) => accumulator + current, 0);
+   return res
  }
- 
- console.log(multiplesOf3and5(10));
 
 
 // const col = document.querySelector('button[type=submit]')

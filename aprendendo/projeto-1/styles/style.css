@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+@import url(./reset.css);
+@import url(./fonts-and-color-palette.css);
+@import url(./links.css);
+
+header {
+   font-family: 'Ubuntu', sans-serif;;
+   font-size: 1.5rem;
+
+   display: flex;
+   justify-content: space-between;
+   padding: 3px 10px;
+}
+
+.logo img {
+   height: 30px;
+}
+
+.search-bar {
+   display: flex;
+   align-items: center;
+   gap: 5px;
+}
+
+.search-icon {
+   cursor: pointer;
+   user-select: none;
+   opacity: .5;
+}
+
+.search-icon:hover {
+   opacity: 1;
+}
+
+.flight-search {
+   height: 300px;
+   background: no-repeat center url(../imagens/photos/london.jpg);
+   background-size: cover;
+   box-shadow: 0 0 10px 5px inset rgba(0 0 0 / .1);
+}

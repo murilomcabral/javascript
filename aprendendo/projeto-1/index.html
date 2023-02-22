@@ -11,20 +11,54 @@
 </head>
 <body>
    <header>
-   <div class="logo">
-      <img src="imagens/vector/fundo.svg" alt="logo">
+   <div logo-container class="logo-container">
+      <a href="./index.html"><img src="imagens/vector/fundo.svg" alt="logo"></a>
    </div>
-   <div class="search-bar">
-      <input type="text" class="search-input" style="display: none;">
-      <span class="search-icon material-symbols-outlined" onclick="showSearchInput()">search</span>
+   <div search-bar-container>
+      <input search-input type="text" class="search-input" style="display: none;">
+      <span search-icon class="material-symbols-outlined" onclick="showSearchInput()">search</span>
    </div>
    </header>
    <main>
-      <div class="flight-search">
+      <div class="flight-search-container">
          <div></div>
       </div>
-      <div>
-
+      <div class="travel-offers-container">
+         <section class="good-offers">
+            <h3>Good Offers Right Now</h3>
+            <p class="discount-pricing">Up to <span>50</span>% discount.</p>
+            <div offers-img-container>
+               <img src="imagens/photos/cinqueterre.jpg" alt="Cinque Terre, Liguria, Italy">
+               <img src="imagens/photos/newyork.jpg" alt="New York City, New York State, United States of America">
+               <img src="imagens/photos/sanfran.jpg" alt="San Francisco, California, United States of America">
+               <img src="imagens/photos/pisa.jpg" alt="Pisa, Toscana, Italy">
+               <img src="imagens/photos/paris.jpg" alt="Paris, Île-de-France, France">
+            </div>
+         </section>
+         <section class="explore">
+            <h3>Explore Nature</h3>
+            <p>Travel with us and see nature at its finest.</p>
+            <div travel-card-container>
+               <div class="travel-card">
+                  <img src="imagens/photos/ocean.jpg" alt="West Coast, Norway">
+                  <div info>
+                     <h3>West Coast, Norway</h3>
+                     <p pricing>Roundtrip from $<span>79</span></p>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam!</p>
+                     <a href="#">Buy Tickets</a>
+                  </div>
+               </div>
+               <div class="travel-card">
+                  <img src="imagens/photos/mountains.jpg" alt="Mountains, Austria">
+                  <div info>
+                     <h3>Mountains, Austria</h3>
+                     <p pricing>One-way from $<span>39</span></p>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam!</p>
+                     <a href="#">Buy Tickets</a>
+                  </div>
+               </div>
+            </div>
+         </section>
       </div>
    </main>
    <script src="scripts/search.js"></script>

@@ -1,2 +1,10 @@
 @charset "UTF-8";
 
+:link, :visited {
+   color: var(--primaryColor);
+   text-decoration: none;
+}
+
+:link:hover, :visited:hover {
+   color: var(--color1);
+}

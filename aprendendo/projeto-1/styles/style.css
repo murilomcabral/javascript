@@ -4,38 +4,138 @@
 @import url(./fonts-and-color-palette.css);
 @import url(./links.css);
 
-header {
-   font-family: 'Ubuntu', sans-serif;;
-   font-size: 1.5rem;
+body {
+   font-family: 'Ubuntu', sans-serif;
+   background-color: hsl(0, 0%, 20%);
+   max-width: 700px;
+   margin: auto;
+}
 
+header, main, footer {
+   background-color: hsl(0, 0%, 95%)
+}
+
+header {
+   font-size: 1.5rem;
    display: flex;
    justify-content: space-between;
+   align-items: center;
    padding: 3px 10px;
 }
 
-.logo img {
+main {
+   color: var(--primaryColor);
+}
+
+footer {
+   color: var(--secondaryColor);
+}
+
+/* h1 to h6 and paragraph */
+
+h3 {
+   margin-top: 10px;
+   margin-bottom: 5px;
+}
+
+p {
+   word-wrap: break-word;
+   word-break: break-all;
+   font-weight: 300;
+   font-size: 0.9rem;
+}
+
+/* header >>> */
+
+[logo-container] {
+   display: flex;
+   align-items: center;
+}
+
+[logo-container] img {
    height: 30px;
 }
 
-.search-bar {
+[search-bar-container] {
    display: flex;
    align-items: center;
    gap: 5px;
 }
 
-.search-icon {
+[search-icon] {
    cursor: pointer;
    user-select: none;
    opacity: .5;
 }
 
-.search-icon:hover {
+[search-icon]:hover {
    opacity: 1;
+   color: var(--color1);
 }
 
-.flight-search {
-   height: 300px;
+/* <<< header | main >>> */
+
+.flight-search-container {
+   height: 400px;
    background: no-repeat center url(../imagens/photos/london.jpg);
    background-size: cover;
-   box-shadow: 0 0 10px 5px inset rgba(0 0 0 / .1);
+   box-shadow: 0 0 5px 5px inset rgba(0 0 0 / .15);
 }
+
+.travel-offers-container {
+   padding: 20px 50px;
+}
+
+[offers-img-container], [travel-card-container] {
+   margin: 15px auto;
+
+   display: grid;
+   gap: 10px;
+}
+
+[offers-img-container] {
+   height: 250px;
+   grid-template-columns: 2fr 1fr 1fr;
+   grid-template-rows: 50%;
+}
+
+[offers-img-container] img {
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+}
+
+[offers-img-container] :first-child {
+   grid-row: span 2;
+}
+
+[travel-card-container] {
+   height: 300px;
+   grid-template-columns: 1fr 1fr;
+}
+
+.travel-card {
+   background-color: white;
+   overflow: hidden;
+}
+
+.travel-card :first-child {
+   height: 50%;
+   width: 100%;
+   object-fit: cover;
+}
+
+.travel-card [info] {
+   padding: 10px;
+}
+
+[info] [pricing] {
+   margin-bottom: 10px;
+}
+
+[info] a {
+   display: block;
+   margin: 10px;
+}
+
+/* <<< main | footer >>> */

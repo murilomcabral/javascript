@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,500;1,300;1,500&display=swap');
 
+
 :root {
    --primaryColor: hsl(0, 0%, 15%);
    --secondaryColor: hsl(0, 0%, 50%);
@@ -10,7 +11,7 @@
 
 .material-symbols-outlined {
    font-variation-settings:
-   'FILL' 0,
+   'FILL' 1,
    'wght' 700,
    'GRAD' 0,
    'opsz' 40

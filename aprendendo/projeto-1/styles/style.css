@@ -48,7 +48,7 @@ p {
    font-size: 0.9rem;
 }
 
-/* header >>> */
+/* header*/
 
 [logo-container] {
    display: flex;
@@ -76,7 +76,9 @@ p {
    color: var(--color1);
 }
 
-/* <<< header | main >>> */
+/* header | main */
+
+/* Flight - Hotel - Rental */
 
 .flight-search-container {
    position: relative;
@@ -87,7 +89,7 @@ p {
    box-shadow: 0 0 5px 5px inset rgba(0 0 0 / .15);
 }
 
-.flight-search {
+.flight-search-box {
    position: absolute;
    top: 50%;
    left: 50%;
@@ -99,8 +101,39 @@ p {
    background-color: white;
 }
 
+.flight-menu {
+   display: flex;
+   max-width: 100%;
+   justify-content: space-around;
+   list-style: none;
+}
+
+.flight-menu a {
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+   align-items: center;
+   width: 100%;
+   padding: 10px;
+
+   font-weight: 500;
+   font-size: 1rem;
+   text-align: center;
+   color: white;
+
+   background-color: var(--primaryColor);
+}
+
+.flight-menu a:first-child {
+   width: 100%;
+   text-align: center;
+   background-color: var(--color1);
+}
+
+/* Good Offers Right Now */
+
 .travel-offers-container {
-   padding: 20px 50px;
+   padding: 20px 100px;
 }
 
 .offers-img-container, .travel-card-container {
@@ -168,6 +201,8 @@ p {
    margin: 15px auto;
 }
 
+/* Newsletter */
+
 .newsletter {
    background-color: rgba(0 0 0 / .5);
    color: white;
@@ -178,10 +213,4 @@ p {
    margin-top: 10px;
 }
 
-/* .newsletter input {
-   width: 100%;
-   line-height: 1.5rem;
-   padding: 3px;
-} */
-
-/* <<< main | footer >>> */
+/* main | footer */

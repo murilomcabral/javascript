@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+/* .travel-card * {outline: 3px solid rgba(255 0 0 / .5)} */
+
 @import url(./reset.css);
 @import url(./fonts-and-color-palette.css);
 @import url(./links.css);
@@ -35,8 +37,8 @@ footer {
 /* h1 to h6 and paragraph */
 
 h3 {
-   margin-top: 10px;
-   margin-bottom: 5px;
+   margin: 10px auto;
+   font-weight: 500;
 }
 
 p {
@@ -106,36 +108,37 @@ p {
 
    display: grid;
    gap: 7px;
+   grid-template-columns: repeat(2, 1fr);
 }
 
-[offers-img-container] {
-   grid-template-columns: 2fr 1fr 1fr;
-   grid-template-rows: 1fr 1fr;
+[gridSub] {
+   display: grid;
+   gap: 7px;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(2, 1fr);
 }
 
-[offers-img-container] img {
+[offers-img-container] img, [gridSub] img{
    height: 100%;
    width: 100%;
    object-fit: cover;
 }
 
-[offers-img-container] :first-child {
-   grid-row: span 2;
-}
-
 [travel-card-container] {
    max-height: 450px;
-   grid-template-columns: 2fr 2fr;
+   grid-template-columns: repeat(2, 1fr);
 }
 
 .travel-card {
+   display: flex;
+   flex-direction: column;
    background-color: white;
-   overflow: hidden;
+   height: fit-content;
 }
 
 .travel-card :first-child {
-   max-height: 50%;
-   width: 100%;
+   max-height: 60%;
+   max-width: 100%;
    object-fit: cover;
 }
 
@@ -147,11 +150,25 @@ p {
    margin-bottom: 10px;
 }
 
-[info] a {
+.buyLink {
    display: block;
-   position: relative;
-   bottom: 0px;
-   margin: 10px;
+   margin: 15px auto;
+}
+
+.newsletter {
+   background-color: rgba(0 0 0 / .5);
+   color: white;
+   padding: 10px;
+}
+
+.newsletter *:not(input) {
+   margin-top: 10px;
+}
+
+.newsletter input {
+   width: 100%;
+   line-height: 1.5rem;
+   padding: 3px;
 }
 
 /* <<< main | footer >>> */

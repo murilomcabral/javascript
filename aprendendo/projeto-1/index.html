@@ -20,21 +20,29 @@
    </div>
    </header>
    <main>
+
+      <!-- flight search box -->
       <div class="flight-search-container">
          <div class="flight-search"></div>
       </div>
+
+      <!-- Good Offers section -->
       <div class="travel-offers-container">
          <section class="good-offers">
             <h3>Good Offers Right Now</h3>
             <p class="discount-pricing">Up to <span>50</span>% discount.</p>
             <div offers-img-container>
-               <img src="imagens/photos/cinqueterre.jpg" alt="Cinque Terre, Liguria, Italy">
-               <img src="imagens/photos/newyork.jpg" alt="New York City, New York State, United States of America">
-               <img src="imagens/photos/sanfran.jpg" alt="San Francisco, California, United States of America">
-               <img src="imagens/photos/pisa.jpg" alt="Pisa, Toscana, Italy">
-               <img src="imagens/photos/paris.jpg" alt="Paris, Île-de-France, France">
+               <div><img src="imagens/photos/cinqueterre.jpg" alt="Cinque Terre, Liguria, Italy"></div>
+               <div gridSub>
+                  <img src="imagens/photos/newyork.jpg" alt="New York City, New York State, United States of America">
+                  <img src="imagens/photos/sanfran.jpg" alt="San Francisco, California, United States of America">
+                  <img src="imagens/photos/pisa.jpg" alt="Pisa, Toscana, Italy">
+                  <img src="imagens/photos/paris.jpg" alt="Paris, Île-de-France, France">
+               </div>
             </div>
          </section>
+
+         <!-- Explore Nature section -->
          <section class="explore">
             <h3>Explore Nature</h3>
             <p>Travel with us and see nature at its finest.</p>
@@ -45,7 +53,7 @@
                      <h3>West Coast, Norway</h3>
                      <p pricing>Roundtrip from $<span>79</span></p>
                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam!</p>
-                     <a href="#">Buy Tickets</a>
+                     <a class="buyLink" href="#">Buy Tickets</a>
                   </div>
                </div>
                <div class="travel-card">
@@ -54,11 +62,20 @@
                      <h3>Mountains, Austria</h3>
                      <p pricing>One-way from $<span>39</span></p>
                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam!</p>
-                     <a href="#">Buy Tickets</a>
+                     <a class="buyLink" href="#">Buy Tickets</a>
                   </div>
                </div>
             </div>
          </section>
+
+         <!-- Newsletter section -->
+         <section class="newsletter">
+            <h3><label for="email-sub">Get the best offers first!</label></h3>
+            <p>Join our newsletter</p>
+            <div><label for="email-sub">E-mail</label><input id="email-sub" type="email" placeholder="Your Email address" required></div>
+            <button type="submit">Subscribe</button>
+         </section>
+
       </div>
    </main>
    <script src="scripts/search.js"></script>

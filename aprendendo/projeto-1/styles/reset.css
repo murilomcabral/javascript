@@ -7,6 +7,7 @@
 }
 
 button {
+   cursor: pointer;
    border: none;
    border-radius: 3px;
    padding: 7px;
@@ -19,4 +20,11 @@ button {
 button:hover {
    background-color: white;
    color: var(--color1);
+}
+
+input {
+   width: 100%;
+   line-height: 1.5rem;
+   padding: 3px 10px;
+   border: 1px solid rgba(0 0 0 / 0.2);
 }

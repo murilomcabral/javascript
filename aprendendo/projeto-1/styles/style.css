@@ -103,7 +103,8 @@ p {
    padding: 20px 50px;
 }
 
-[offers-img-container], [travel-card-container] {
+.offers-img-container, .travel-card-container {
+   position: relative;
    margin: 15px auto;
 
    display: grid;
@@ -112,19 +113,31 @@ p {
 }
 
 [gridSub] {
+   position: relative;
    display: grid;
    gap: 7px;
    grid-template-columns: repeat(2, 1fr);
    grid-template-rows: repeat(2, 1fr);
 }
 
-[offers-img-container] img, [gridSub] img{
+.offers-img-container img, [gridSub] img {
    height: 100%;
    width: 100%;
    object-fit: cover;
 }
 
-[travel-card-container] {
+[gridSub] div {
+   position: relative;
+}
+
+.offers-img-container span {
+   position: absolute;
+   bottom: 5px;
+   left: 5px;
+   color: white;
+}
+
+.travel-card-container {
    max-height: 450px;
    grid-template-columns: repeat(2, 1fr);
 }
@@ -165,10 +178,10 @@ p {
    margin-top: 10px;
 }
 
-.newsletter input {
+/* .newsletter input {
    width: 100%;
    line-height: 1.5rem;
    padding: 3px;
-}
+} */
 
 /* <<< main | footer >>> */

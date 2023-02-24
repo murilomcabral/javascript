@@ -101,6 +101,18 @@ p {
    background-color: white;
 }
 
+/* REVISAR */
+
+.flight-search {
+   padding: 10px;
+}
+
+.flight-search > div {
+   display: flex;
+   justify-content: space-between;
+   flex-grow: 1;
+}
+
 .flight-menu {
    display: flex;
    max-width: 100%;
@@ -111,8 +123,7 @@ p {
 .flight-menu a {
    display: flex;
    justify-content: center;
-   gap: 10px;
-   align-items: center;
+
    width: 100%;
    padding: 10px;
 
@@ -124,11 +135,26 @@ p {
    background-color: var(--primaryColor);
 }
 
+.flight-menu a > * {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 7px;
+}
+
 .flight-menu a:first-child {
    width: 100%;
    text-align: center;
    background-color: var(--color1);
 }
+
+.flight-icon {
+   rotate: 45deg;
+}
+
+/* .flight-text, .hotel-text, .rental-text {
+   display: none;
+} */
 
 /* Good Offers Right Now */
 

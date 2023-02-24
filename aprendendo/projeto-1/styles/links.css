@@ -6,5 +6,5 @@
 }
 
 :link:hover, :visited:hover {
-   color: var(--color1);
+   scale: 1.05;
 }

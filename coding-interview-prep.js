@@ -23,6 +23,8 @@ function multiplesOf3and5(number) {
    return res
  }
 
+ console.log(multiplesOf3and5(5))
+
 
 // const col = document.querySelector('button[type=submit]')
 // col.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.remove()

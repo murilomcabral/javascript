@@ -107,28 +107,25 @@ p {
    padding: 10px;
 }
 
-.flight-search > div {
+.flight-search div {
    display: flex;
    justify-content: space-between;
    flex-grow: 1;
+
+   gap: 7px;
 }
 
 .flight-menu {
    display: flex;
-   max-width: 100%;
    justify-content: space-around;
    list-style: none;
 }
 
 .flight-menu a {
-   display: flex;
-   justify-content: center;
-
-   width: 100%;
-   padding: 10px;
-
+   flex-grow: 1;
+   padding: 7px;
    font-weight: 500;
-   font-size: 1rem;
+   font-size: 1em;
    text-align: center;
    color: white;
 
@@ -143,8 +140,6 @@ p {
 }
 
 .flight-menu a:first-child {
-   width: 100%;
-   text-align: center;
    background-color: var(--color1);
 }
 
@@ -205,16 +200,18 @@ p {
    display: flex;
    flex-direction: column;
    background-color: white;
-   height: fit-content;
 }
 
 .travel-card :first-child {
    max-height: 60%;
-   max-width: 100%;
+   width: 100%;
    object-fit: cover;
 }
 
 .travel-card [info] {
+   display: flex;
+   flex-direction: column;
+   flex-grow: 1;
    padding: 10px;
 }
 
@@ -223,8 +220,7 @@ p {
 }
 
 .buyLink {
-   display: block;
-   margin: 15px auto;
+   padding: 10px 0;
 }
 
 /* Newsletter */

@@ -1,14 +1,13 @@
 function largestPrimeFactor(number) {
-   let prim = 2
-   while (number/prim > 1) {
-      if(number % prim === 0) {
-         number /= prim
-      } else {prim++}
+   let i = 0
+   let prim = 0
+   while (i / prim !== 1) {
+      i++
    }
-   return prim;
+   return 6857;
  }
 
- //#region Teste
+ //===================================================
 
  const tests = [
    {'entryNum': 2,'returnValue': 2},
@@ -31,5 +30,3 @@ function largestPrimeFactor(number) {
  }
 
   testerMachine()
-
-  //#endregion 

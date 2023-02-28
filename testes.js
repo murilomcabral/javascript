@@ -1,6 +1,6 @@
 const arr1 = [3,4]
 
-function sum(a,b,c,d) {
+function sum(a,b) {
    return Math.sqrt((a**2)+(b**2))
 }
 console.log(sum(...arr1))

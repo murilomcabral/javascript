@@ -1,30 +1,3 @@
-const randomNumberGenerator = (columns, rows) => {
-   let matrix = [];
- 
-   // Generate a 2D array with 8 columns and 9 rows
-   for (let i = 0; i < columns; i++) {
-     let row = [];
-     for (let j = 0; j < rows; j++) {
-       row.push(Math.floor(Math.random() * 90) + 1);
-     }
-     matrix.push(row);
-   }
- 
-   // Insert a blank row every 3 rows
-   let output = [];
-   for (let i = 0; i < columns; i++) {
-     for (let j = 0; j < rows; j++) {
-       if ((j+1) % 3 === 0) {
-         output.push('');
-       }
-       output.push(matrix[i][j]);
-     }
-   }
- 
-   return output;
- };
-
-
 // const diff = (arr1, arr2) => [
 //    ...arr1.filter(e => !arr2.includes(e)),
 //    ...arr2.filter(e => !arr1.includes(e))

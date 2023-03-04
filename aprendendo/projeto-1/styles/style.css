@@ -1,7 +1,5 @@
 @charset "UTF-8";
 
-/* .travel-card * {outline: 3px solid rgba(255 0 0 / .5)} */
-
 @import url(./reset.css);
 @import url(./fonts-and-color-palette.css);
 @import url(./links.css);

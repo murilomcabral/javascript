@@ -7,5 +7,5 @@
 }
 
 :link:hover, :visited:hover {
-   scale: 1.05;
+   opacity: .7;
 }

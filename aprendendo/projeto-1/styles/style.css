@@ -94,9 +94,11 @@ p {
    transform: translate(-50%, -50%);
    width: 890px;
    max-width: 80%;
-   height: 260px;
-   max-height: 60%;
    background-color: white;
+}
+
+[type="submit"] {
+   margin-top: 10px;
 }
 
 /* REVISAR */

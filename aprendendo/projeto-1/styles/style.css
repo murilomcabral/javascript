@@ -236,3 +236,24 @@ p {
 }
 
 /* main | footer */
+
+footer {
+   text-align: center;
+   padding: 15px;
+}
+
+footer ul {
+   display: flex;
+   list-style: none;
+   justify-content: center;
+   gap: 10px;
+}
+
+footer img {
+   filter: opacity(.5);
+   width: 1.5em;
+}
+
+footer > * {
+   padding: 5px;
+}

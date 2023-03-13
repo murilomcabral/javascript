@@ -235,6 +235,26 @@ p {
    margin-top: 10px;
 }
 
+[contact-container] {
+   display: flex;
+   margin-top: 20px;
+   flex-flow: column wrap;
+   gap: 10px;
+}
+
+[contact-container] ol {
+   list-style-type: none;
+}
+
+[contact-container] span {
+   font-size: 1rem;
+   margin-right: 7px;
+}
+
+[contact-container] input {
+   line-height: 2rem;
+}
+
 /* main | footer */
 
 footer {

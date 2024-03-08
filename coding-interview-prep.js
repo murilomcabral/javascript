@@ -7,13 +7,18 @@ const diff = (arr1, arr2) => [
   ...arr2.filter(e => !arr1.includes(e))
 ];
 
+console.log(new Set(diff([10, 5, 7], [7, 12, 5, 11 ,12])))
+
 const sym = (...args) => [...new Set(args.reduce(diff))];
+
 
 // test here
 console.log('=========================')
 console.log('Spread operator:')
 console.log(sym([1, 2, 3], [5, 2, 1, 4]))
 console.log('=========================')
+
+console.log([...new Set([1, 2, 3].concat([5, 2, 1, 4]))])
 
 // const col = document.querySelector('button[type=submit]')
 // col.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.remove()

@@ -50,3 +50,95 @@
 
 // testList.forEach(e => console.log(descendingOrder(e)))
 
+// https://www.codewars.com/kata/5390bac347d09b7da40006f6/train/javascript
+
+// String.prototype.toJadenCase = function () {
+//   return this.split(' ').map(e => e[0].toUpperCase() + e.slice(1)).join(' ')
+// };
+
+// let testList = [
+//   "How can mirrors be real if our eyes aren't real"
+// ]
+
+// testList.forEach(b => console.log(b.toJadenCase()))
+
+// https://www.codewars.com/kata/517abf86da9663f1d2000003/train/javascript
+
+// function toCamelCase(str) {
+//   let arr = str.split(/[^a-z]+/i)
+//   let l = String(arr[0][0])
+
+//   if (l === l.toUpperCase()) {
+//     return arr.map(e => e[0].toUpperCase() + e.slice(1)).join('')
+//   }
+
+//   for (let i = 1; i < arr.length; i++) {
+//     arr[i] = arr[i][0].toUpperCase() + arr[i].slice(1)
+//   }
+
+//   return arr.join('')
+// }
+
+// let testList = [
+//   "the-stealth-warrior",
+//   "The_Stealth_Warrior",
+//   "The_Stealth-Warrior",
+//   "A-B-C",
+//   "the_Pippi_is-Savage",
+//   "the-pippi-is-Omoshiroi",
+//   "a-cat-was-pippi",
+//   "a_Cat_Was-Omoshiroi"
+// ]
+
+// testList.forEach(e => console.log(toCamelCase(e)))
+
+//https://www.codewars.com/kata/5a043724ffe75fbab000009f/train/javascript
+
+// function reverseMiddle(array) {
+//   const m = Math.floor(array.length / 2)
+//   return array.length % 2 === 0 ? [array[m], array[m - 1]] : [array[m + 1], array[m], array[m - 1]]
+// }
+
+// let testList = [
+//   [60, 29, 91, 38, 33, -67, -78, -51, 36, 91, 98, -91, 77, 56, -29, 89, -2, -25, 58, 34, -3, -76, 19, -58, 95, 74, -53, -42, 67, -73, 20, 87, 84, 87, 51, 100, 0],
+//   [1, 2, 3, 4],
+//   [1, 2, 3, 4, 5],
+//   [1, 2, 3, 4, 5, 6],
+//   [1, 2, 3, 4, 5, 6, 7]
+// ]
+
+// testList.forEach(e => console.log(reverseMiddle(e)))
+
+//https://www.codewars.com/kata/65c0161a2380ae78052e5731/train/javascript
+
+function stonePick(arr) {
+  let sticks = 0
+  let cobblestone = 0
+
+  for (let obj of arr) {
+    if (obj === "Sticks") sticks++
+    if (obj === "Wood") sticks += 4
+    if (obj === "Cobblestone") cobblestone++
+  }
+
+  let pickaxeCount = 0
+
+  let i = 0
+  while (sticks >= 2 && cobblestone >= 3) {
+    sticks -= 2
+    cobblestone -= 3
+    pickaxeCount++
+    i++
+  }
+
+  return pickaxeCount;
+}
+
+let testList = [
+  ["Sticks", "Sticks", "Cobblestone", "Cobblestone", "Cobblestone"],
+  ["Wood", "Cobblestone", "Cobblestone", "Cobblestone"],
+  ["Sticks", "Wool", "Cobblestone"],
+  ["Cobblestone", "Cobblestone", "Cobblestone", "Cobblestone", "Cobblestone", "Cobblestone", "Wood"]
+]
+
+testList.forEach(e => console.log(stonePick(e)))

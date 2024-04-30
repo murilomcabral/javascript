@@ -247,6 +247,8 @@ console.log([...new Set([1, 2, 3].concat([5, 2, 1, 4]))])
 
 //https://www.codewars.com/kata/65c0161a2380ae78052e5731/train/javascript
 
+/* não finalizado
+
 function stonePick(arr) {
   let sticks = 0
   let cobblestone = 0
@@ -278,3 +280,11 @@ let testList = [
 ]
 
 testList.forEach(e => console.log(stonePick(e)))
+*/
+
+function getCount(str) {
+  let n = Array.from(str).filter(e => e.match(/[aeiou]/i))
+  return n !== undefined ? n.length : 0
+}
+
+console.log(getCount('my pyx'))

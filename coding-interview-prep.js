@@ -247,7 +247,28 @@ console.log([...new Set([1, 2, 3].concat([5, 2, 1, 4]))])
 
 //https://www.codewars.com/kata/65c0161a2380ae78052e5731/train/javascript
 
-/* não finalizado
+//https://www.codewars.com/kata/54ff3102c1bad923760001f3/train/javascript/66316dc275236905d9bf7cda
+
+// function getCount(str) {
+//   let n = Array.from(str).filter(e => e.match(/[aeiou]/i))
+//   return n !== undefined ? n.length : 0
+// }
+
+// console.log(getCount('my pyx'))
+
+// https://www.codewars.com/kata/546e2562b03326a88e000020/train/javascript
+
+// function squareDigits(num){
+//   return Number(Array.from(num.toString()).map(e => e**2).join(''))
+// } 
+
+// let testList = [
+//   3212,
+//   2112,
+//   0
+// ]
+
+// testList.forEach(e => console.log(squareDigits(e)))
 
 function stonePick(arr) {
   let sticks = 0
@@ -280,11 +301,3 @@ let testList = [
 ]
 
 testList.forEach(e => console.log(stonePick(e)))
-*/
-
-function getCount(str) {
-  let n = Array.from(str).filter(e => e.match(/[aeiou]/i))
-  return n !== undefined ? n.length : 0
-}
-
-console.log(getCount('my pyx'))

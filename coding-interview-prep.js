@@ -245,8 +245,6 @@ console.log([...new Set([1, 2, 3].concat([5, 2, 1, 4]))])
 
 // testList.forEach(e => console.log(reverseMiddle(e)))
 
-//https://www.codewars.com/kata/65c0161a2380ae78052e5731/train/javascript
-
 //https://www.codewars.com/kata/54ff3102c1bad923760001f3/train/javascript/66316dc275236905d9bf7cda
 
 // function getCount(str) {
@@ -269,6 +267,10 @@ console.log([...new Set([1, 2, 3].concat([5, 2, 1, 4]))])
 // ]
 
 // testList.forEach(e => console.log(squareDigits(e)))
+
+/*
+
+// https://www.codewars.com/kata/65c0161a2380ae78052e5731
 
 function stonePick(arr) {
   let sticks = 0
@@ -301,3 +303,19 @@ let testList = [
 ]
 
 testList.forEach(e => console.log(stonePick(e)))
+
+*/
+
+// https://www.codewars.com/kata/57cebe1dc6fdc20c57000ac9/train/javascript
+
+function findShort(s){
+  return Math.min(...s.split(' ').map(e => e.length))
+}
+
+let testList = [
+  "bitcoin take over the world maybe who knows perhaps",
+  "turns out random test cases are easier than writing out basic ones",
+  "Let's travel abroad shall we"
+]
+
+testList.forEach(e => console.log(findShort(e)))

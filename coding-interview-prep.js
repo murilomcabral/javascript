@@ -322,21 +322,37 @@ testList.forEach(e => console.log(stonePick(e)))
 
 //PORQUE ERRADO?
 
-function grille(message, code) {
-  if (message === '') return message
-  let bin = code.toString(2)
-  let n = message.length - bin.length
-  bin = n > 0 ? '0'.repeat(n) + bin : bin
-  let arr = Array.from(message)
-  return arr.filter((e, i) => {if (bin[i] == 1) return e}).join('')
-}
+// function grille(message, code) {
+//   if (message === '') return message
+//   let bin = code.toString(2)
+//   let n = message.length - bin.length
+//   bin = n > 0 ? '0'.repeat(n) + bin : bin
+//   let arr = Array.from(message)
+//   return arr.filter((e, i) => {if (bin[i] == 1) return e}).join('')
+// }
 
-let testList = [
-  ["abcdef", 5],
-  ["", 5],
-  ["abc", 1],
-  ["tcddoadepwweasresd",77098],
-  ["ab", 255]
-]
+// let testList = [
+//   ["abcdef", 5],
+//   ["", 5],
+//   ["abc", 1],
+//   ["tcddoadepwweasresd",77098],
+//   ["ab", 255]
+// ]
 
-testList.forEach(e => console.log(grille(...e)))
+// testList.forEach(e => console.log(grille(...e)))
+
+// https://www.codewars.com/kata/514b92a657cdc65150000006/train/javascript
+
+// function solution(number){
+//   if (number < 1) return 0
+//   const arr = []
+//   for (let i = 0; i < number; i++) if (i % 3 === 0 || i % 5 === 0) arr.push(i)
+//   return arr.reduce((pre, curr) => {return pre += curr})
+// }
+
+// let testList = [ 
+//   10,
+//   20
+// ] 
+
+// testList.forEach(e => console.log(solution(e))) 

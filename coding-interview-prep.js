@@ -2,23 +2,23 @@
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
 //Spread
 
-const diff = (arr1, arr2) => [
-  ...arr1.filter(e => !arr2.includes(e)),
-  ...arr2.filter(e => !arr1.includes(e))
-];
+// const diff = (arr1, arr2) => [
+//   ...arr1.filter(e => !arr2.includes(e)),
+//   ...arr2.filter(e => !arr1.includes(e))
+// ];
 
-console.log(new Set(diff([10, 5, 7], [7, 12, 5, 11 ,12])))
+// console.log(new Set(diff([10, 5, 7], [7, 12, 5, 11 ,12])))
 
-const sym = (...args) => [...new Set(args.reduce(diff))];
+// const sym = (...args) => [...new Set(args.reduce(diff))];
 
 
-// test here
-console.log('=========================')
-console.log('Spread operator:')
-console.log(sym([1, 2, 3], [5, 2, 1, 4]))
-console.log('=========================')
+// // test here
+// console.log('=========================')
+// console.log('Spread operator:')
+// console.log(sym([1, 2, 3], [5, 2, 1, 4]))
+// console.log('=========================')
 
-console.log([...new Set([1, 2, 3].concat([5, 2, 1, 4]))])
+// console.log([...new Set([1, 2, 3].concat([5, 2, 1, 4]))])
 
 // const col = document.querySelector('button[type=submit]')
 // col.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.remove()
@@ -308,14 +308,35 @@ testList.forEach(e => console.log(stonePick(e)))
 
 // https://www.codewars.com/kata/57cebe1dc6fdc20c57000ac9/train/javascript
 
-function findShort(s){
-  return Math.min(...s.split(' ').map(e => e.length))
+// function findShort(s){
+//   return Math.min(...s.split(' ').map(e => e.length))
+// }
+
+// let testList = [
+//   "bitcoin take over the world maybe who knows perhaps",
+//   "turns out random test cases are easier than writing out basic ones",
+//   "Let's travel abroad shall we"
+// ]
+
+// testList.forEach(e => console.log(findShort(e)))
+
+//PORQUE ERRADO?
+
+function grille(message, code) {
+  if (message === '') return message
+  let bin = code.toString(2)
+  let n = message.length - bin.length
+  bin = n > 0 ? '0'.repeat(n) + bin : bin
+  let arr = Array.from(message)
+  return arr.filter((e, i) => {if (bin[i] == 1) return e}).join('')
 }
 
 let testList = [
-  "bitcoin take over the world maybe who knows perhaps",
-  "turns out random test cases are easier than writing out basic ones",
-  "Let's travel abroad shall we"
+  ["abcdef", 5],
+  ["", 5],
+  ["abc", 1],
+  ["tcddoadepwweasresd",77098],
+  ["ab", 255]
 ]
 
-testList.forEach(e => console.log(findShort(e)))
+testList.forEach(e => console.log(grille(...e)))

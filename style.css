@@ -7,11 +7,5 @@ box-sizing: border-box;
 }
 
 body {
-  background-color: #eef;
-}
-
-canvas {
-  position: relative;
-  /* left: 10px;
-  top: 10px; */
+  background-color: #eee;
 }

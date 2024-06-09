@@ -355,4 +355,27 @@ testList.forEach(e => console.log(stonePick(e)))
 //   20
 // ] 
 
-// testList.forEach(e => console.log(solution(e))) 
+// testList.forEach(e => console.log(solution(e)))
+function findGlasses(arr){
+  let reg = new RegExp(/O-{1,}O/)
+  for (let i of arr) {
+    if (reg.test(i)) return arr.indexOf(i)
+  }
+}
+
+const testList = [
+  [['phone', 'O-O', 'coins', 'keys'], 1],
+  [['OO', 'wallet', 'O##O', 'O----O'], 3],
+  [['O_O', 'O-O', 'OwO'], 1],
+  [['O--#--O', 'dustO---Odust', 'more dust'], 1],
+  [['floor', 'the floor again', 'pockets', 'bed', 'cabinet', 'the top of my head O-O'], 5],
+  [['OOOO----~OOO', '-------', 'OOOOOOO', 'OO-OO-OO-O'], 3],
+]
+
+testList.forEach(e => {
+  if (findGlasses(e[0]) === e[1]) {
+    console.log('OK')
+  } else {
+    console.log('ERR')
+  }
+})
